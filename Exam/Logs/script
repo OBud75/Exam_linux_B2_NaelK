@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+
+USER=$(whoami)
+
+
+TIME=$(date "+%Y-%m-%d %H:%M:%S")
+
+
+echo "User: $USER, Time: $TIME" >> logs

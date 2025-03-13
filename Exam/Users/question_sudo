@@ -1,0 +1,22 @@
+Sudo lorsqu'on le place avant la commande permet de nous attribuer les permissions SuperUtilisateur c'est pour cela 
+qu'il demande le mot de passe lorsqu'on tape sudo devant une commande.
+
+
+Tous les utilisateurs ne peuvent pas utiliser ce mot clé, l'administrateur doit leurs donner la permission via des 
+commandes 
+
+Pour donner la permission à Toto d'utiliser apt install il faut :
+-sudo visudo
+-Toto ALL=(ALL) NOPASSWD: /usr/bin/apt install
+
+Pour autoriser Toto à faire sudo en permanence il faut : 
+-sudo usermod -aG sudo Toto
+-groups Toto
+
+Il ne faut pas tout faire avec l'utilisateur Root tout simplement pour des raisons de sécurité, pour réduire les 
+erreurs et garder une traçabilité des actions administratives. 
+
+Pour afficher un message de bienvenue quand Toto se connecte il faut :
+-sudo nano /home/Toto/.bashrc
+-echo "Bienvenue Toto"
+

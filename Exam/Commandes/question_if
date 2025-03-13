@@ -1,0 +1,3 @@
+if/else permet de tester plusieurs conditions individuelles avec des expressions booléennes, tandis que 
+switch compare une seule expression à plusieurs valeurs possibles, rendant le code 
+plus lisible lorsqu'il y a plusieurs cas à tester.

@@ -1,0 +1,2 @@
+Le shebang (#!/usr/bin/bash) indique quel interpréteur utiliser pour exécuter le script. Avec ./script, tu peux l'exécuter directement.
+Sans, tu dois utiliser bash script pour le lancer.

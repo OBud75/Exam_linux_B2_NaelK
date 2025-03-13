@@ -1,0 +1,31 @@
+#!/usr/bin/bash
+
+# Fonction check_argv
+check_argv() {
+    if [ -z "$1" ]; then
+        return 0  # Pas d'argument, retourne 0
+    else
+        return 1  # Argument non vide, retourne 1
+    fi
+}
+
+# Passer le premier argument à la fonction
+check_argv "$1"
+
+# Récupérer la valeur retournée et l'afficher
+result=$?
+echo "La fonction check_argv a retourné : $result"
+
+# Switch sur le deuxième argument
+case "$2" in
+    hello)
+        echo "Le deuxième argument est hello."
+        ;;
+    toto)
+        echo "Le deuxième argument est toto."
+        ;;
+    *)
+        echo "Le deuxième argument est autre chose."
+        ;;
+esac
+

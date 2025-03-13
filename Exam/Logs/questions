@@ -1,0 +1,32 @@
+Les différents niveaux de Logs: 
+-Debug
+-Info
+-Warning
+-Error
+-Critical
+
+
+Comment configurer les logs ? 
+
+-sudo nano /etc/logrotate.d/nginx
+-/var/log/nginx/*.log {
+    monthly               # Rotation mensuelle
+    rotate 12             # Conserver 12 anciens fichiers de logs
+    compress              # Compresser les anciens fichiers de logs
+    delaycompress         # Ne compresser les fichiers qu'à partir du deuxième fichier
+    missingok             # Ne pas générer d'erreur si le fichier log n'existe pas
+    notifempty            # Ne pas faire de rotation si le fichier est vide
+    create 644 root root  # Créer les nouveaux fichiers avec les bonnes permissions
+    postrotate
+        # Redémarrer ou recharger nginx après chaque rotation de logs
+        /usr/sbin/nginx -s reopen
+    endscript
+}
+
+-sudo logrotate --force /etc/logrotate.d/nginx
+
+
+Dans la pratique, pourquoi créer des règles de rotation de log ?
+
+La création de règles de rotation de logs permet de gérer efficacement l'espace disque en limitant la taille 
+des fichiers de logs, en archivant les anciennes données et en maintenant les performances du système.

@@ -1,0 +1,5 @@
+La commande sudo chmod g+x owned_by_toto ajoute la permission d'exécution pour le groupe sur le fichier 
+owned_by_toto.
+
+La commande **`sudo chown root:root owned_by_toto`** change le propriétaire et le groupe du fichier 
+**`owned_by_toto`** en **root**.

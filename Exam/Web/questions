@@ -1,0 +1,48 @@
+Quelle est la différence entre http et https ?
+
+La différence c'est que https utilise un protocole de sécurité (d'où le 's' à la fin). 
+
+
+Donnez le nom de 2 programmes qui permettent de faire des requetes http.
+-curl
+-wget
+
+Par convention, à quoi sont reservés les ports 80, 22 et 443 ?
+
+80: http
+22: ssh
+443: https
+
+
+Comment activer et désactiver le pare feu par défaut ? Comment lister les règles entrantes et sortantes ?
+
+activer le pare feu : 
+-sudo ufw enable
+
+desactiver le pare feu :
+-sudo ufw disable
+
+lister les règles actives : 
+-sudo ufw status verbose
+
+
+A quoi sert le programme Nginx ?
+
+Nginx est un serveur web léger et performant, utilisé pour servir des pages web, gérer des connexions simultanées 
+et comme proxy inverse ou équilibreur de charge.
+
+
+A quoi correspondent les initiales MVC ? Quel avantage offre cette architecture d'application ?
+
+Les initiales **MVC** correspondent à **Modèle-Vue-Contrôleur**, une architecture d'application 
+qui sépare la logique métier (Modèle), l'interface utilisateur (Vue) et la gestion des actions 
+utilisateur (Contrôleur), offrant ainsi une meilleure organisation du code et facilitant la 
+maintenance et l'évolution de l'application.
+
+
+A quoi correspondent les initiales CRUD ?
+
+C : Create
+R : Read
+U : Update 
+D : Delete

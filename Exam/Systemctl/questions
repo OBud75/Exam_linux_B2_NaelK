@@ -1,0 +1,14 @@
+La commande pour prendre en compte les changements dans la configuration des services est systemctl daemon-reload.
+
+Cela recharge la configuration des services, permettant à systemd de prendre en compte 
+les modifications effectuées dans les fichiers de configuration des services sans redémarrer le système.
+
+Pour démarrer un service il faut :
+-sudo systemctl start 
+
+Et pour le fermer il faut : 
+-sudo systemctl stop 
+
+L'option restart redémarre un service. La différence c'est qu'on utilise restart avec un service déjà en marche 
+contrairement à start. 
+

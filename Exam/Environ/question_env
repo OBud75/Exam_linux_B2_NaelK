@@ -1,0 +1,20 @@
+La dernière commande facilite le partage et la reproduction de l'environnement et permet une installation rapide 
+des dépendances. 
+
+
+Le dossier pythonvenv/ contient l'environnement virtuel qui est spécifique à 
+ta machine et n'est pas nécessaire de versionner avec Git. 
+Cela permet de ne pas alourdir le dépôt Git avec des fichiers qui peuvent être recréés à partir de requirements.txt.
+
+
+Il est conseillé d'ajouter des fichiers comme __pycache__/, .DS_Store, *.log, .env, et des bases de données 
+locales pour éviter de versionner des fichiers temporaires, sensibles ou générés automatiquement.
+
+
+apt update met à jour la liste des paquets disponibles, tandis que apt upgrade installe les mises à jour 
+des paquets déjà installés sur le système.
+
+
+apt autoclean supprime les fichiers de paquets obsolètes, apt clean efface tous les fichiers de cache des paquets, 
+apt autoremove supprime les paquets inutiles installés en dépendances, et apt purge désinstalle un paquet 
+ainsi que ses fichiers de configuration.

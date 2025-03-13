@@ -1,0 +1,155 @@
+1.FIlesystem
+
+mkdir FileSystem
+
+mkdir assets
+
+touch img_{1..10}.png
+
+touch du_texte.txt
+
+nano du_texte.txt
+
+rename 's/\.png$/.jpeg/' *.png  (installation nécessaire du package "rename")
+
+mkdir medias
+
+mv *.jpeg medias/	
+
+nano A quoi servent les différents types de fichiers
+
+nano script
+
+#!/usr/bin/bash
+echo "Hello world"
+
+chmod +x script
+
+touch question_bash
+
+nano question_bash
+
+
+
+2. Commandes 
+
+mkdir Commandes
+
+touch too_long.txt 
+
+nano too_long.txt
+
+head -n 5 too_long.txt
+
+tail -n 7 too_long.txt
+
+sort -t ' ' -k2 -n -r too_long.txt | head -n 3
+
+sed -n '42p' too_long.txt
+
+sed -i '42s/.*/The Ultimate Question of Life, the Universe and Everything/' too_long.txt
+
+nano script
+
+chmod +x script
+
+./script argument
+
+nano script
+
+
+3. Users 
+
+who 
+
+sudo groupadd Toto
+
+sudo useradd -m -g Toto Toto
+
+sudo passwd Toto
+
+groups Toto
+
+sudo groupadd shared
+
+sudo usermod -aG shared Toto
+sudo usermod -aG shared nael
+
+mkdir Users 
+
+nano question_sudo 
+
+mkdir Shared
+
+sudo chown Toto:Toto ~/Linux_B2/Exam/Shared
+
+sudo nano owned_by_toto
+
+sudo chown Toto:Toto owned_by_toto
+
+sudo nano owned_by_toto
+
+sudo chmod u+x owned_by_toto
+
+sudo nano question_perm
+
+
+5.Environnement
+
+mkdir Environ
+
+nano script 
+
+chmod +x script
+
+python3 -m venv pythonvenv
+
+source pythonvenv/bin/activate
+
+pip install flask
+
+pip freeze > requirements.txt
+
+nano question_env
+
+touch .gitignore
+
+nano .gitignore
+
+
+6.SystemCTL
+
+mkdir Systemctl
+
+nano questions
+
+7.Cron
+
+mkdir Cron
+
+nano questions
+
+
+8.Logs 
+
+mkdir Logs
+
+nano questions
+
+nano script
+
+chmod +x script
+
+sudo nano /etc/systemd/journald.conf
+
+SystemMaxUse=200M
+
+sudo systemctl restart systemd-journald
+
+
+9.Web
+
+mkdir Web
+
+nano questions
+

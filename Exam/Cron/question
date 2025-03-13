@@ -1,0 +1,16 @@
+Lister les taches cron :
+-crontab -l
+
+Pour un autre utilisateur : 
+-sudo crontab -u nom_user -l
+
+Pour créer une tâche Cron : 
+-sudo crontab -u toto -e
+-30 1 * * 3 /chemin/vers/owned_by_toto
+
+Les dossiers cron.weekly, cron.hourly, et cron.monthly sont utilisés pour 
+organiser des tâches cron récurrentes à des intervalles spécifiques :
+
+cron.hourly : Contient des scripts à exécuter une fois par heure.
+cron.weekly : Contient des scripts à exécuter une fois par semaine.
+cron.monthly : Contient des scripts à exécuter une fois par mois.
