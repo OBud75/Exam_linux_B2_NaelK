@@ -2,6 +2,8 @@ Quelle est la différence entre http et https ?
 
 La différence c'est que https utilise un protocole de sécurité (d'où le 's' à la fin). 
 
+-> oui, les requetes sont chiffrées
+
 
 Donnez le nom de 2 programmes qui permettent de faire des requetes http.
 -curl
@@ -39,6 +41,7 @@ qui sépare la logique métier (Modèle), l'interface utilisateur (Vue) et la ge
 utilisateur (Contrôleur), offrant ainsi une meilleure organisation du code et facilitant la 
 maintenance et l'évolution de l'application.
 
+-> Bien
 
 A quoi correspondent les initiales CRUD ?
 
