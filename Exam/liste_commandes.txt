@@ -12,6 +12,19 @@ nano du_texte.txt
 
 rename 's/\.png$/.jpeg/' *.png  (installation nécessaire du package "rename")
 
+-> Sans rename on peut penser à boucler sur la commande mv
+n=1;
+for file in *.png; do
+  mv "$file" "img_${n}.jpeg";
+  ((n++));
+done
+
+-> Ou encore
+for file in *.png; do
+  mv "$file" "${file%.png}.jpeg"
+done
+
+
 mkdir medias
 
 mv *.jpeg medias/	
@@ -36,6 +49,8 @@ nano question_bash
 mkdir Commandes
 
 touch too_long.txt 
+
+-> printf "Ligne %s\n" {1..100} > too_long
 
 nano too_long.txt
 
@@ -143,6 +158,8 @@ chmod +x script
 sudo nano /etc/systemd/journald.conf
 
 SystemMaxUse=200M
+
+-> Il est possible de simplifier la manipulation du fichier avec sudo systemctl edit systemd-journald
 
 sudo systemctl restart systemd-journald
 
