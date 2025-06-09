@@ -8,6 +8,8 @@ Les différents niveaux de Logs:
 
 Comment configurer les logs ? 
 
+-> Il est possible de simplifier la manipulation du fichier avec sudo systemctl edit systemd-journald
+
 -sudo nano /etc/logrotate.d/nginx
 -/var/log/nginx/*.log {
     monthly               # Rotation mensuelle
@@ -29,4 +31,4 @@ Comment configurer les logs ?
 Dans la pratique, pourquoi créer des règles de rotation de log ?
 
 La création de règles de rotation de logs permet de gérer efficacement l'espace disque en limitant la taille 
-des fichiers de logs, en archivant les anciennes données et en maintenant les performances du système.
+des fichiers de logs, en archivant les anciennes données et en maintenant les performances du système. -> et le cout de stockage
