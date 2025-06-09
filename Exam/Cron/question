@@ -14,3 +14,8 @@ organiser des tâches cron récurrentes à des intervalles spécifiques :
 cron.hourly : Contient des scripts à exécuter une fois par heure.
 cron.weekly : Contient des scripts à exécuter une fois par semaine.
 cron.monthly : Contient des scripts à exécuter une fois par mois.
+
+Il existe quelques spécificités : 
+Dans la logique, les taches .weekly, hourly, monthly sont le plus souvent effectuées par le système (souvent par root).
+Alors que les autres sont souvent executées par un utilisateur (postgres, nginx, un humain etc).
+Dernier détail : sur certaines distributions, les taches liées à un utilisateur sont dans /var
