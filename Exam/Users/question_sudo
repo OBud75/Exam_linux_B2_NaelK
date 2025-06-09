@@ -16,6 +16,9 @@ Pour autoriser Toto à faire sudo en permanence il faut :
 Il ne faut pas tout faire avec l'utilisateur Root tout simplement pour des raisons de sécurité, pour réduire les 
 erreurs et garder une traçabilité des actions administratives. 
 
+-> oui, le point clé est qu'utiliser sudo élève les droits mais uniquement pour la commande qui suit et surtout cela
+demandera le mot de passe contrairement à root qui peut tout supprimer sans qu'on ne lui demande aucune vérification
+
 Pour afficher un message de bienvenue quand Toto se connecte il faut :
 -sudo nano /home/Toto/.bashrc
 -echo "Bienvenue Toto"
